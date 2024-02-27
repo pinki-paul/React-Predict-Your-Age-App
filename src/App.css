@@ -1,38 +1,102 @@
-.App {
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(54, 77, 14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+.main-container h1{
+  font-size: 3.04rem;
+  margin-bottom: 1.665rem;
+  color:#fff;
+  font-weight: 700;
+  font-family: cursive;
+}
+.main-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container .container {
   display: flex;
   flex-direction: column;
+  width: 550px;
+  height: 430px;
+  background-color: #fff;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 1px 4px 8px 0px rgba(0,0,0,0.8);
+  border-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.main-container .container input {
+  border: none;
+  outline: none;
+  width: 92%;
+  margin-top: 1rem;
+  padding: 1rem 1.03rem;
+  background: transparent;
+  border: 1px solid rgb(42, 58, 5);
+  text-transform: capitalize;
+  font-size: 1.45rem;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  color:#4e4e09;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-container .container button{
+  padding: 1rem 2rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  font-size:1.13rem;
+  font-weight: 600;
+  border-radius: 34px;
+  border: 1px solid olivedrab;
+  color:#4e4e09;
+  letter-spacing: 1.1px;
+  cursor: pointer;
+  margin-top: 1.1rem;
+}
+.main-container .container h3,
+.main-container .container h5,
+.main-container .container p{
+  color:#4e4e09;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+@media(max-width:550px){
+  .main-container h1{
+    font-size: 2.654rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main-container .container{
+    width: 450px;
+    max-width: 100%;
+    height: 350px;
+    margin: auto;
+  }
+}
+
+@media(max-width:410px){
+  .main-container h1{
+    font-size: 1.454rem;
+  }
+
+  .main-container{
+    text-align: center;
+  }
+
+  .main-container .container{
+    width: 350px;
+    max-width: 100%;
+    height: 350px;
+    margin: auto;
   }
 }
